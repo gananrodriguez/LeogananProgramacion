@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
              break;
             case R.id.button2:
                     vista1.setText("boton 2");
-                
+
                 Intent dos = new Intent(this,Activity2.class);
                 startActivity(dos);
         default:
