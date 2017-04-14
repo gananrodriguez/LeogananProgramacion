@@ -25,12 +25,44 @@
         android:layout_marginTop="105dp"
         android:id="@+id/button" />
 
-    <Button
-        android:text="Button"
+    <RadioGroup
+
+        android:id="@+id/Radiogroup1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button"
-        android:layout_toEndOf="@+id/button"
-        android:layout_marginStart="44dp"
-        android:id="@+id/button2" />
+        android:layout_below="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="122dp">
+
+        <RadioButton
+            android:text="opcion 1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonOne"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="opcion 2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonTwo"
+            android:layout_weight="1" />
+
+        <RadioButton
+
+            android:text="opcion 3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonthree"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="opcion 4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonfour"
+            android:layout_weight="1" />
+    </RadioGroup>
+
 </RelativeLayout>
