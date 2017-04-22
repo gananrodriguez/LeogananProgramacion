@@ -61,40 +61,42 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     //este metodo me permite  seleccionar los radiobutton
 
-    public void leo () {
-
-        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, @IdRes int checkedId) {
 
 
-                if (checkedId == R.id.radioButtonOne)  {
-                    Toast.makeText(getApplicationContext()," opcion 1",Toast.LENGTH_SHORT).show();
-                    return;
-                }
+   public void leo () {
 
-                if (checkedId == R.id.radioButtonTwo)  {
-                    Toast.makeText(getApplicationContext()," opcion 2",Toast.LENGTH_SHORT).show();
-                    return;
-                }
+       radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+           @Override
+           public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
 
-                if (checkedId == R.id.radioButtonthree)  {
-                    Toast.makeText(getApplicationContext()," opcion 3",Toast.LENGTH_SHORT).show();
-                    return;
-                }
+               switch (checkedId) {
 
-                if (checkedId == R.id.radioButtonfour)  {
-                    Toast.makeText(getApplicationContext()," opcion 1",Toast.LENGTH_SHORT).show();
-                    return;
-                }
+                   case R.id.radioButtonOne:
+                       Toast.makeText(getApplicationContext(),"opcion",Toast.LENGTH_SHORT).show();;
+                       break;
 
-            }
-        });
+                   case R.id.radioButtonTwo:
+                       Toast.makeText(getApplicationContext(),"opcion2",Toast.LENGTH_SHORT).show();
+                       break;
+
+                   case R.id.radioButtonthree:
+                       Toast.makeText(getApplicationContext(),"opcion3",Toast.LENGTH_SHORT).show();
+                       break;
+
+                   case R.id.radioButtonfour:
+                       Toast.makeText(getApplicationContext(),"opcion4",Toast.LENGTH_SHORT).show();
+                       break;
+
+                   default:
+
+                       break;
+
+               }
 
 
-    }
-
-
+           }
+       });
+   }
 
 
 
